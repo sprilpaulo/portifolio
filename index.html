@@ -1,0 +1,202 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+
+<head>
+    <title> portifolio </title>
+    <meta charset="utf-8">
+    <meta name="author" content="paulo">
+    <meta name="description" content="portifolio desenvolvido por Paulo Paulus">
+    <meta name="keywords" content="html5, tecnologia">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <style>
+        .sobreposição {
+            display: block;
+            margin: 10px;
+            position: relative;
+        }
+
+        .sobreposição img {
+            width: 100%;
+            display: block;
+        }
+
+        .sobreposição:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            transition: all .5s;
+            border-radius: 6px;
+        }
+
+        .sobreposição:hover:before {
+            background: rgba(0, 0, 0, .5);
+        }
+
+        .sobreposição:after {
+            opacity: 0;
+        }
+
+        .sobreposição:hover:after {
+            content: 'cursando';
+            display: block;
+            position: absolute;
+            border: 3px solid white;
+            color: white;
+            top: 50%;
+            left: 50%;
+            padding: 10px 20px;
+            transform: translate(-50%, -50%);
+            opacity: 1;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <header class="main-header">
+        <a href="index.html" class="main-header-link imagem-link">
+            <img src="./css/avatar.jpg" alt="texto qualquer">
+        </a>
+        <h1 class="main-header-title">
+            Trabalho Feito por <br>
+            <strong>Paulo De Tarso Ortiz Paulus</strong>,<br>
+            Iniciante em Web Desiger
+        </h1>
+    </header>
+
+    <main class="main-content">
+
+        <section class="main-content-section">
+
+            <h2>portifolio desenvolvido com intuito de demonstrar conhecimento em HTML & CSS</h2>
+            <p>Todo conhecimento citado nas imagens abaixo estão sempre em upgrade para assim me aprimorar tanto em programação quanto em Web designer.</p>
+        </section>
+        <section class="main-content-section">
+            <h3>Conhecimentos</h3>
+            <div class="row">
+                <div class="col-2">
+                    <article class="recent-works-card">
+                        <a class="imagem-link sobreposição" href="#">
+                            <img src="images/thumbs/01.jpg" alt="descrição">
+                        </a>
+                        <p class="recent-works-card-title">HTML 5</p>
+                        <p>Conhecimentos em HTML sempre em expansão visando WEB Desenvolvimento.</p>
+                    </article>
+
+                    <article class="recent-works-card">
+                        <a class="imagem-link sobreposição" href="#">
+                            <img src="images/thumbs/02.jpg" alt="descrição">
+                        </a>
+                        <p class="recent-works-card-title">CSS</p>
+                        <p>Uso eficiente em CSS deixando sempre o projeto mais semântico e modelado.</p>
+                    </article>
+
+                    <article class="recent-works-card">
+                        <a class="imagem-link sobreposição" href="#">
+                            <img src="images/thumbs/03.jpg" alt="descrição">
+                        </a>
+                        <p class="recent-works-card-title">JavaScript</p>
+                        <p>Curso em andamento de JS almejando integrar mais semântica em Web Designer.</p>
+                    </article>
+                    <article class="recent-works-card">
+                        <a class="imagem-link sobreposição" href="#">
+                            <img src="images/thumbs/08.jpg" alt="descrição">
+                        </a>
+                        <p class="recent-works-card-title">BootStrap</p>
+                        <p>Curso de BootStrap para codigos mais simples e semanticos.</p>
+                    </article>
+                </div>
+                <div class="col-2">
+                    <article class="recent-works-card">
+                        <a class="imagem-link sobreposição" href="#">
+                            <img src="images/thumbs/04.jpg" alt="descrição">
+                        </a>
+                        <p class="recent-works-card-title">Java</p>
+                        <p>Curso em andamento de Java almejando aplicações eficientes.</p>
+                    </article>
+                    <article class="recent-works-card">
+                        <a class="imagem-link sobreposição" href="#">
+                            <img src="images/thumbs/05.jpg" alt="descrição">
+                        </a>
+                        <p class="recent-works-card-title">DJango</p>
+                        <p>Complementos em Django visando Web e programação juntamente ao Python.</p>
+                    </article>
+                    <article class="recent-works-card">
+                        <a class="imagem-link sobreposição" href="#">
+                            <img src="images/thumbs/06.jpg" alt="descrição">
+                        </a>
+                        <p class="recent-works-card-title">Python</p>
+                        <p>Curso de Python em andamento para aplicações inteligentes e projetar Web com alta eficiência.</p>
+                    </article>
+                    <article class="recent-works-card">
+                        <a class="imagem-link sobreposição" href="#">
+                            <img src="images/thumbs/07.jpg" alt="descrição">
+                        </a>
+                        <p class="recent-works-card-title">Jquery</p>
+                        <p>Curso de Jquery em biblioteca para maior aplicaçoes em projetos.</p>
+                    </article>
+                </div>
+            </div> <!-- row -->
+        </section>
+        <section class="main-content-section">
+            <h3><b>Contato</b></h3>
+
+            <div class="row">
+
+                <div class="col-1-3">
+                    <address>
+                        <p>
+
+                            <span>Telefone: </span>
+                            054-98431-0873
+                            <br>
+                            <span>E-mail: </span>
+                            paulinhotarso1994.2@hotmail.com
+                            <br>
+                            <span>Endereço: </span>
+                            124 Felix Montanaro, Bairro Progresso Bento Gonçalves-RS
+
+                        </p>
+                    </address>
+                </div>
+            </div> <!-- row -->
+        </section>
+        <section class="main-content-section">
+
+            <h4>Preformatado</h4>
+            <pre><code>
+    &lt;script&gt;
+        alert('oi');
+    &lt;/script&gt;
+                </code></pre>
+            <br>
+            <h4 class="sobre_min">Sobre Mim</h4>
+            <p>
+                Me chamo Paulo tenho 22 anos de idade porém sendo novo na área de códigos tanto em hyper texto quanto em python e Java, escrevi meu primeiro código aos 14 anos enquanto tentava projetar em PHP um painel de Login, acabei me apaixonando pela área de programação e Web porem apenas no inicio de 2020 comecei a aprimorar meus conhecimentos através de diversos cursos EAD com a pretensão de ser um programador FULLSTACK e desenvolver ótimos projetos.
+            </p>
+        </section>
+    </main>
+    <footer class="main-footer">
+
+        <ul class="ul-icons">
+            <li><a href="https://github.com/sprilpaulo"><span class="hidden">Twitter</span><i class="fab fa-github"></i></a></li>
+            <li><a href="https://www.facebook.com/paulo.paulus.3?ref=bookmarks" class="icon-link" class="icon-link"><span class="hidden">Facebook</span><i class="fab fa-facebook-square"></i></a></li>
+        </ul>
+        <ul class="copyright">
+            <li>© Orus Designer</li>
+            <li>Design: Paulo Paulus</li>
+        </ul>
+    </footer>
+</body></html>
